@@ -6,6 +6,9 @@ Virtual Environment Setup
 - [4. Make Sure 'venv' Is Installed](#4-make-sure-venv-is-installed)
 - [3. Determine the Location of Your Target Directory](#3-determine-the-location-of-your-target-directory)
 - [4. Create Your Virtual Environment](#4-create-your-virtual-environment)
+- [5. Activating Your Virtual Environment](#5-activating-your-virtual-environment)
+- [6. De-Activating or Leaving The Virtual Environment](#6-de-activating-or-leaving-the-virtual-environment)
+- [99. GitHub Instructions](#99-github-instructions)
 - [100. Freezing Your Virtual Environment](#100-freezing-your-virtual-environment)
 
 # 1. What Is A Virtual Environment
@@ -78,11 +81,49 @@ If you are switched into your target directory:
 python3 -m venv env
 ```
 
-if you are **not** switched into your target directory:
+If you are **not** switched into your target directory:
 
 ```bash
 python3 -m venv /path/to/new/virtual/environment
 ```
+
+# 5. Activating Your Virtual Environment
+
+Before you start installing or using packages in your virtual environment, you need to **activate** it. This is the magic a virtual environment. By activating and deactivating your virtual environment, you are able to switch in and out of the isolated habitat of the virtual environment.
+
+You need to make a point to activate & de-activate your virtual environment each time you use it, otherwise you may run into some confusing errors. Because the virtual environment exists to hold different packages & package versions, if you are not properly activating & de-activating your virtual environments, you may end up running the wrong version of a particular package, or may not be able to find it at all.
+
+In order to activate your virtual environment, run the following command:
+
+```bash
+source env/bin/activate
+```
+
+You can check to make sure you have properly activated your virtual environment by checking the location of your Python interpreter, using hte command below (which should point to the 'env' directory):
+
+```bash
+which python3
+```
+
+While your virtual environment is activated, all packages installed or updated will be inside of the virtual environment. You will be able to import and use these packages in your Python application.
+
+<!-- Make a note about packages installed globally working without the venv being properlly updated -->
+
+# 6. De-Activating or Leaving The Virtual Environment
+
+The easy part of working with a virtual environment is de-activating it, or otherwise 'switching out' of the virtual environment.
+
+De-activating your virtual environment can be done with the following command:
+
+```bash
+deactivate
+```
+
+This can also be done by closing or exiting the terminal session you are using to interact with your virtual environment.
+
+# 99. GitHub Instructions
+
+If you have your Python project connected to a remote GitHub repository, you should exclude your virtual environment directory from your verson control system (VCS) by including the path to your virtual environment in your .gitignore file.
 
 # 100. Freezing Your Virtual Environment
 
