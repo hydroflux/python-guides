@@ -14,6 +14,8 @@ A virtual environment allows you to create an isolated 'habitat' for your Python
 
 A virtual environment give you the freedom to experiment with different packages, libraries, & frameworks (etc.) without fear of making any changes to your computer's global state. When you're done with your virtual environment, you can delete it without any lasting repercussions.
 
+Along with experimentation, proper use of virtual environments ensures that when you switch projects, you can simply create a new virtual environment without any concern of affecting the packages installed in other virtual environments.
+
 As someone who originally learned Python through trial and error, rather than any formal education on the subject, knowledge of virtual environments and how to create & use them would have saved me a lot of time and headache early in my career.
 
 The venv module provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories.
@@ -51,6 +53,16 @@ After ensuring that your version of pip is up-to-date, we want to install / chec
 Since we will be using Python 3.9 for this guide, we will be using the 'venv' package.
 
 # 3. Determine the Location of Your Target Directory
+
+Your 'target directory' is the folder that your virtual environment will exist on your computer. I would advise making a new folder (directory) for your virtual environment rather than using any existing directory in order to maintain the "isolated" integrity of your virtual environment.
+
+I use a generalized 'Development' folder for any programming projects I'm working on, but the nature of a virtual environment makes it so that this isn't necessary (although I would still recommend it, especially if you're just starting out).
+
+In order to check your current directory using the terminal, you can use the following command, which will "Print Working Directory" for you:
+
+```bash
+pwd
+```
 
 # 4. Create Your Virtual Environment
 
