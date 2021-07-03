@@ -58,6 +58,8 @@ Your 'target directory' is the folder that your virtual environment will exist o
 
 I use a generalized 'Development' folder for any programming projects I'm working on, but the nature of a virtual environment makes it so that this isn't necessary (although I would still recommend it, especially if you're just starting out).
 
+The Python documentation recommends to use a virtual environment while developing any Python applications.
+
 In order to check your current directory using the terminal, you can use the following command, which will "Print Working Directory" for you:
 
 ```bash
@@ -66,9 +68,21 @@ pwd
 
 # 4. Create Your Virtual Environment
 
-Create a virtual environment by executing the command "venv", along with the path to the directory you're working in:
+Create a virtual environment by executing venv. If you are currently switched into the target directory you will be using for your working directory, you can use the 'env' argument to create your virtual environment.
 
+The second argument of 'env' is the location of your virtual environment, so if you are not switched into your target directory, you can specify its location rather than using 'env'. If this is the case, replace the 'env' argument with the path to your target directory to create your virtual environment:
+
+If you are switched into your target directory:
+
+```bash
+python3 -m venv env
+```
+
+if you are **not** switched into your target directory:
+
+```bash
 python3 -m venv /path/to/new/virtual/environment
+```
 
 # 100. Freezing Your Virtual Environment
 
