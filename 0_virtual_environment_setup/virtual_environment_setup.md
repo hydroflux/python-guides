@@ -8,6 +8,7 @@ Virtual Environment Setup
 - [4. Create Your Virtual Environment](#4-create-your-virtual-environment)
 - [5. Activating Your Virtual Environment](#5-activating-your-virtual-environment)
 - [6. De-Activating or Leaving The Virtual Environment](#6-de-activating-or-leaving-the-virtual-environment)
+- [7. Installing Packages](#7-installing-packages)
 - [99. GitHub Instructions](#99-github-instructions)
 - [100. Freezing Your Virtual Environment](#100-freezing-your-virtual-environment)
 
@@ -120,6 +121,11 @@ deactivate
 ```
 
 This can also be done by closing or exiting the terminal session you are using to interact with your virtual environment.
+
+# 7. Installing Packages
+
+Create a part 2 of installing packages inside of your virtual environment.
+<https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>
 
 # 99. GitHub Instructions
 
