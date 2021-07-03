@@ -10,7 +10,13 @@ Virtual Environment Setup
 
 # 1. What Is A Virtual Environment
 
-The venv module provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories. Each virtual environment has it's own Python binary, and can have its own independent set of installed Python packages in its site directories
+A virtual environment allows you to create an isolated 'habitat' for your Python project to live. Each virtual environment has it's own Python binary, and can have its own independent set of installed Python packages in its site directories.
+
+A virtual environment give you the freedom to experiment with different packages, libraries, & frameworks (etc.) without fear of making any changes to your computer's global state. When you're done with your virtual environment, you can delete it without any lasting repercussions.
+
+As someone who originally learned Python through trial and error, rather than any formal education on the subject, knowledge of virtual environments and how to create & use them would have saved me a lot of time and headache early in my career.
+
+The venv module provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories.
 
 # 2. Requirements
 
@@ -39,6 +45,10 @@ python3 -m pip install --upgrade pip
 ```
 
 # 4. Make Sure 'venv' Is Installed
+
+After ensuring that your version of pip is up-to-date, we want to install / check on the package that we will be using to create our virtual environment. The Python documentation states that if you are using Python 3.3 or newer, the [venv](https://docs.python.org/3/library/venv.html#module-venv) module is the preferred way to create and manage virtual environments. The venv package is included in the Python standard library & therefor requires no additional documentation.
+
+Since we will be using Python 3.9 for this guide, we will be using the 'venv' package.
 
 # 3. Determine the Location of Your Target Directory
 
